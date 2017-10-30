@@ -18,15 +18,16 @@ public class SupplierDelete {
 		sc = new SupplierController();
 	}
 
-	@After
-	public void tearDown() throws Exception {
-	
-	}
+
 
 	@Test
 	public void test() throws SQLException {
 		int deleted = sc.deleteSupplierByCvr(32); 
 		assertTrue(deleted > 0);
 	}
-
+	
+	@After
+	public void tearDown() throws Exception {
+	
+	}
 }

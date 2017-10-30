@@ -1,15 +1,17 @@
 package modelLayer;
 
 public abstract class Product {
-	
+	private int productId;
 	private String name; 
 	private Colors color; 
 	private String brand; 
 	private double purchasePrice; 
 	private double regularPrice; 
 	private double salesPrice;
-	public Product(String name, Colors color, String brand, double purchasePrice, double regularPrice,
+	private String proType; 
+	public Product( String name, Colors color, String brand, double purchasePrice, double regularPrice,
 			double salesPrice) {
+		
 		this.name = name;
 		this.color = color;
 		this.brand = brand;
@@ -53,6 +55,24 @@ public abstract class Product {
 	}
 	public void setSalesPrice(double salesPrice) {
 		this.salesPrice = salesPrice;
+	}
+
+	public int getProductId() {
+		return productId;
+	}
+
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+
+
+
+	public String getProType() {
+		return proType;
+	}
+
+	public void setProType(String proType) {
+		this.proType = proType;
 	}
 
 	
